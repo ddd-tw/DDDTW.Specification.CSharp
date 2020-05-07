@@ -122,7 +122,7 @@ bool IsSatisfiedBy<TEntity>(this ISpecification<TEntity> specification, TEntity 
 ISpecification<TEntity> Clone<TEntity>(this ISpecification<TEntity> specification);
 ```
 
-**LinqBuilder** also extends the following extensions to support ```ISpecification``` on ```IQueryable``` and ```IEnumerable```.
+**DDDTW.Specification.CSharp** also extends the following extensions to support ```ISpecification``` on ```IQueryable``` and ```IEnumerable```.
 ```csharp
 IEnumerable<Entity> collection = collection.Where(specification);
 bool result = collection.Any(specification);
@@ -134,7 +134,7 @@ Entity result = collection.Single(specification);
 Entity result = collection.SingleOrDefault(specification);
 ```
 
-## LinqBuilder.OrderBy
+## DDDTW.Specification.CSharp.OrderBy
 
 ### Usage
 Order specifications can be constructed in almost the same way as regular specifications.
