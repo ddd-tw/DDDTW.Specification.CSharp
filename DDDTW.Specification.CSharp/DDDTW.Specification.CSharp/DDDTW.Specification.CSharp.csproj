@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <PackageId>DDDTW.Specification</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>DDDTW</Authors>
     <Company>DDDTW</Company>
     <PackageDescription>This is made by DDD community in Taiwan. In this package, we create a lot of class and interface, they are related DDD.</PackageDescription>
-    <RepositoryUrl>https://github.com/ddd-tw/DDDTW.SharedModules.CSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ddd-tw/DDDTW.Specification.CSharp</RepositoryUrl>
     <Copyright>© DDDTW., All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>DDD;Specification</PackageTags>
