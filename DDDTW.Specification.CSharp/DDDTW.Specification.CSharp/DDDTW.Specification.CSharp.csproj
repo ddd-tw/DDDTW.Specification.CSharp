@@ -1,7 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>DDDTW.Specification</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>DDDTW</Authors>
+    <Company>DDDTW</Company>
+    <PackageDescription>This is made by DDD community in Taiwan. In this package, we create a lot of class and interface, they are related DDD.</PackageDescription>
+    <RepositoryUrl>https://github.com/ddd-tw/DDDTW.SharedModules.CSharp</RepositoryUrl>
+    <Copyright>© DDDTW., All rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>DDD;Specification</PackageTags>
+    <PackageReleaseNotes>First release.</PackageReleaseNotes>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
 </Project>
