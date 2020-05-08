@@ -1,12 +1,18 @@
 # DDDTW.Specification.CSharp
 This repo is for specification pattern in C#.
- 
-## Specification
+
+**Available on Nuget:** [https://www.nuget.org/packages/DDDTW.Specification/](https://www.nuget.org/packages/DDDTW.Specification/)
+
+## Table of Contents
+1. [DDDTW.Specification.CSharp](#dddtw.specification.csharp)
+2. [DDDTW.Specification.CSharp.OrderBy](#dddtw.specification.csharp.orderby)
+
+## DDDTW.Specification.CSharp
 
 ### Usage
 Specifications can be constructed in three different ways.
 
-**By extending Specification:**
+**By derived Specification class:**
 ```csharp
 public class FirstnameIsFoo : Specification<Person>
 {
@@ -19,7 +25,7 @@ public class FirstnameIsFoo : Specification<Person>
 ISpecification<Person> firstnameIsFoo = new FirstnameIsFoo();
 ```
 
-**By extending DynamicSpecification:**
+**By derived DynamicSpecification class:**
 ```csharp
 public class FirstnameIs : DynamicSpecification<Person, string>
 {
@@ -32,7 +38,7 @@ public class FirstnameIs : DynamicSpecification<Person, string>
 ISpecification<Person> firstnameIsFoo = new FirstnameIs().Set("Foo");
 ```
 
-**By extending MultiSpecification:**
+**By derived MultiSpecification class:**
 ```csharp
 public class FirstnameIsFoo : MultiSpecification<Person, OtherPerson>
 {
@@ -122,7 +128,7 @@ bool IsSatisfiedBy<TEntity>(this ISpecification<TEntity> specification, TEntity 
 ISpecification<TEntity> Clone<TEntity>(this ISpecification<TEntity> specification);
 ```
 
-**DDDTW.Specification.CSharp** also extends the following extensions to support ```ISpecification``` on ```IQueryable``` and ```IEnumerable```.
+**DDDTW.Specification.CSharp.Specification** also extends the following extensions to support ```ISpecification``` on ```IQueryable``` and ```IEnumerable```.
 ```csharp
 IEnumerable<Entity> collection = collection.Where(specification);
 bool result = collection.Any(specification);
